@@ -1,8 +1,8 @@
-/* body{
+body{
     background-color: rgb(24, 26, 27);
     color: snow;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-} */
+}
 header, .welcome, .forum-section{
     margin-bottom: 20px;
     background: #f9f9f9;
