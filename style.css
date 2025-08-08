@@ -1,0 +1,25 @@
+/* body{
+    background-color: rgb(24, 26, 27);
+    color: snow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
+header, .welcome, .forum-section{
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.window-header{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #336699;
+}
+body{
+    /* color: aliceblue; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    a{
+        color: lightgreen;
+        /* color:rgb(83, 83, 255) ; */
+    }
