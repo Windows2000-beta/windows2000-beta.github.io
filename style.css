@@ -11,17 +11,18 @@ header, .welcome, .forum-section{
     border: 1px solid #ccc;
 }
 .window-header{
+    color: snow;
     background-color: rgb(54, 56, 57);
     font-size: 20px;
     margin-bottom: 10px;
-    color: #336699;
+    /* color: #336699; */
 }
 body{
     /* color: aliceblue; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
+}
 
-    a{
-        color: lightgreen;
-        /* color:rgb(83, 83, 255) ; */
-    }
+a{
+    color: lightgreen;
+    /* color:rgb(83, 83, 255) ; */
+}
