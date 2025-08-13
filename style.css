@@ -3,6 +3,32 @@ body{
     color: snow;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.navbar {
+    background-color: antiquewhite;
+    padding: 15px 0;
+    border: outset;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.navbar li {
+    margin: 0 15px;
+}
+.navbar a {
+    color: lightseagreen;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+.navbar a:hover {
+    background-color: hsl(34, 78%, 76%);
+}
 header, .welcome, .forum-section{
     background-color: rgb(54, 56, 57);
     margin-bottom: 20px;
@@ -16,10 +42,6 @@ header, .welcome, .forum-section{
     font-size: 20px;
     margin-bottom: 10px;
     /* color: #336699; */
-}
-body{
-    /* color: aliceblue; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 a{
