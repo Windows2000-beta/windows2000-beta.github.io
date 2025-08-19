@@ -1,7 +1,7 @@
 body{
     background-color: rgb(24, 26, 27);
     color: snow;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 .navbar {
     background-color: rgb(24, 26, 27);
@@ -34,7 +34,7 @@ header, .welcome, .forum-section{
     margin-bottom: 20px;
     /* background: #f9f9f9; */
     padding: 10px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
 }
 .window-header{
     color: snow;
