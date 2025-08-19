@@ -6,7 +6,7 @@ body{
 .navbar {
     background-color: rgb(24, 26, 27);
     padding: 15px 0;
-    border: outset;
+    border: solid 2px;
 }
 .navbar ul {
     list-style: none;
@@ -47,4 +47,9 @@ header, .welcome, .forum-section{
 a{
     color: lightgreen;
     /* color:rgb(83, 83, 255) ; */
+}
+.selected{
+    background-color: rgb(24, 26, 27);
+    padding: 15px 0;
+    border: solid 2px;
 }
