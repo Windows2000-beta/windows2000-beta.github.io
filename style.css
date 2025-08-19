@@ -27,7 +27,7 @@ body{
     border-radius: 4px;
 }
 .navbar a:hover {
-    background-color: hsl(34, 78%, 76%);
+    background-color: rgb(54, 56, 57);
 }
 header, .welcome, .forum-section{
     background-color: rgb(54, 56, 57);
