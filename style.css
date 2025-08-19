@@ -7,6 +7,7 @@ body{
     background-color: rgb(24, 26, 27);
     padding: 15px 0;
     border: solid 2px;
+    color: snow;
 }
 .navbar ul {
     list-style: none;
@@ -14,20 +15,25 @@ body{
     justify-content: center;
     margin: 0;
     padding: 0;
+    color: snow;
 }
 .navbar li {
     margin: 0 15px;
+    color: snow;
 }
 .navbar a {
+    /* Самый важный отображатель инфы до навередния курсора */
     color: lightseagreen;
     text-decoration: none;
     font-size: 16px;
     transition: all 0.3s ease;
     padding: 8px 15px;
     border-radius: 4px;
+    color: snow;
 }
 .navbar a:hover {
     background-color: rgb(54, 56, 57);
+
 }
 header, .welcome, .forum-section{
     background-color: rgb(54, 56, 57);
@@ -41,7 +47,7 @@ header, .welcome, .forum-section{
     background-color: rgb(54, 56, 57);
     font-size: 20px;
     margin-bottom: 10px;
-    color: #336699;
+    color: rgb(120, 200, 220);
 }
 
 a{
