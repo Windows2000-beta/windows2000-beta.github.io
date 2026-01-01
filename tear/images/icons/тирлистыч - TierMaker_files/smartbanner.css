@@ -1,0 +1,29 @@
+#smartbanner { background: #fff; position:absolute; left:0; top:-65px; border-bottom:1px solid #e8e8e8; width:100%; height:65px; z-index:9998; overflow:hidden; -webkit-text-size-adjust:none; }
+#smartbanner, html.sb-animation {-webkit-transition: all .3s ease;}
+#smartbanner .sb-container { margin: 0 auto; }
+#smartbanner .sb-close { font-weight: normal ; position: absolute; left:10px; top: 27px; display:block; font-size:25px; color:#ccc; text-decoration:none; cursor: pointer; z-index: 10000 }
+#smartbanner .sb-close:active { }
+#smartbanner .sb-icon { position:absolute; left:40px; top:10px; display:block; width:50px; height:50px; background-size:contain; border-radius:10px; }
+#smartbanner.no-icon .sb-icon { display:none; }
+#smartbanner .sb-info { position:absolute; left:98px; top:13px; width:44%; font-size:13px; line-height:15px; color:#666;}
+#smartbanner #smartbanner.no-icon .sb-info { left:34px; }
+#smartbanner .sb-info strong { display:block; font-size:17px; color:#000; line-height: 20px; font-weight: normal; margin-bottom: 4px }
+#smartbanner .sb-info > span:nth-child(3) { display:none }
+#smartbanner .sb-info > span { color: #666 }
+#smartbanner .sb-info em { font-style:normal; text-transform:uppercase; }
+#smartbanner .sb-button { position:absolute; right:10px; top:15px; padding: 10px 20px; min-width: 10%; font-size:13px; text-align:center; color:#fff; text-decoration:none; background: #3a5795; border-radius: 20px }
+#smartbanner .sb-button:active, #smartbanner .sb-button:hover { background:-webkit-linear-gradient(top, #dcdcdc 0%,#efefef 100%); }
+
+/*#smartbanner .sb-icon.gloss:after { content:''; position:absolute; left:0; top:-1px; border-top:1px solid rgba(255,255,255,0.8); width:100%; height:50%; background:-webkit-linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.2) 100%); border-radius:10px 10px 12px 12px; }*/
+
+#smartbanner.android { }
+#smartbanner.android .sb-close {}
+#smartbanner.android .sb-close:active { }
+#smartbanner.android .sb-info {}
+#smartbanner.android .sb-info strong {}
+#smartbanner.android .sb-button {}
+#smartbanner.android .sb-button span { text-align: center; display: block; padding: 0 10px; text-transform:none; text-shadow:none; box-shadow:none; }
+#smartbanner.android .sb-button:active, #smartbanner.android .sb-button:hover { background: none; }
+#smartbanner.android .sb-button:active span, #smartbanner.android .sb-button:hover span { background:#2AC7E1; }
+
+#smartbanner.windows .sb-icon { border-radius: 0px; }

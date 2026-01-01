@@ -1,0 +1,483 @@
+#tier-wrap {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#tier-container{
+    display: flex;
+    flex-direction: column;
+    border-left: solid 1px #000;
+    border-right: solid 1px #000;
+    background: #1A1A17;
+}
+
+.tier-row {
+    display: flex;
+    flex-direction: row;
+    min-height: 80px;
+    border-top: solid 1px #000;
+    /*border-bottom: solid 1px #000;*/
+}
+
+.tier-row:last-child {
+    border-bottom: solid 1px #000;
+}
+
+.label-holder {
+    width: 100px;
+    min-height: 80px;
+    border-right: solid 1px #000;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background: #fff;
+    border: solid 1px #efefef;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 250px;
+    box-sizing: border-box;
+}
+
+.modal-buttons button {
+    background: #efefef;
+    max-width: 300px;
+}
+
+.label {
+    color: #333;
+    overflow: hidden;
+    text-align: center;
+    margin: 5px;
+}
+
+.tier.sort {
+    flex: 1;
+}
+
+.character {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    background-position: center;
+    background-size: cover;
+    flex: none;
+    cursor: pointer;
+}
+
+.settings-control {
+    width: 80px;
+    display: flex;
+    flex-direction: row;
+    background: #000;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings {
+    width: 40px;
+    height: 40px;
+    background: url(/images/chart/chart/settings.png) center no-repeat;
+    background-position: center;
+    background-size: 80%;
+    cursor: pointer;
+    transition: all .3s;
+    display: inline-block;
+}
+
+.move-up:hover, .move-down:hover, .settings:hover {
+    opacity: .5;
+}
+
+.move-buttons {
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.move-up {
+    height: 32px;
+    width: 64px;
+    background: url(/images/chart/chart/arrowup.png) center no-repeat;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.move-down {
+    height: 32px;
+    width: 64px;
+    background: url(/images/chart/chart/arrowdown.png) center no-repeat;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+#char, #create-image-carousel {
+    margin: 0px auto 50px;
+    line-height: 0px;
+}
+
+.character {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    background-position: center;
+    background-size: cover;
+    flex: none;
+    cursor: pointer;
+}
+
+.darkTheme .character {
+    background-color: #000;
+}
+
+#overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100% !important;
+    text-align: center;
+    z-index: 10000000000;
+    background-color: rgba(0, 0, 0, .9);
+    transition: opacity .3s;
+}
+
+#overlay #modalWrapper #modal, #overlay #modal-wrapper #modal, #gameChange, #helpMenu, #screenshotShow, #export-container {
+    position: relative;
+    display: none;
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    z-index: 2000;
+    max-height: 600px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+#screenshotShow canvas, #export-container canvas {
+    width: 100%;
+    margin: 20px 0
+}
+
+#backgroundcolorselectContainer {
+    width: 100%;
+    overflow: scroll;
+    margin-bottom: 30px;
+    display: none;
+}
+
+#color-select, #backgroundcolorselect {
+    margin: 0px 4px;
+    margin-bottom: 20px;
+}
+
+#color-select span, #backgroundcolorselect span {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    display: inline-block;
+    transition: box-shadow .1s;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+#color-select span.selected, #backgroundcolorselect span.selected {
+    border: solid 2px #000;
+}
+
+#close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    margin: 16px;
+    background: url("/images/chart/chart/close.png");
+    opacity: .5;
+    transition: opacity .3s;
+    cursor: pointer;
+}
+
+#close:hover {
+    opacity: 1;
+}
+
+#draggable-container {
+    position: relative;
+    height: 600px;
+    padding: 0;
+    margin: 20px 0px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#screenshotShow, #export-container {
+    display: none;
+}
+
+.draggable {
+    width: 100px;
+    height: 100px;
+    float: left;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    z-index: 999;
+}
+
+.draggable-list .draggable {
+    width: 60px;
+    height: 60px;
+    z-index: 999;
+}
+
+#drop {
+    width: 100%;
+    height: 600px;
+    float: left;
+    background: #000;
+    position: relative;
+    padding: 0;
+    margin: 0 0 20px 0;
+    border: 2px solid #ccc;
+    overflow: hidden;
+}
+
+#draggable-container #drop:before {
+    content: '';
+    position: absolute;
+    border-bottom: 2px #ccc solid;
+    height: 100%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+#draggable-container #drop:after {
+    content: '';
+    position: absolute;
+    border-right: 2px #ccc solid;
+    height: 100%;
+    width: 100%;
+    transform: translateX(-50%);
+}
+
+.axis-labels {
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    z-index: 1000;
+}
+
+#left-x {
+    left: 10px;
+    top: 52%;
+}
+
+#right-x {
+    right: 10px;
+    top: 52%;
+}
+
+#top-y {
+    top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#bottom-y {
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.axis-text {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 0px 0px 5px #000;
+    width: 340px;
+}
+
+#left-x-input {
+    text-align: left;
+}
+
+#right-x-input {
+    text-align: right;
+}
+
+.axis-text:disabled {
+    color: #fff !important;
+    -webkit-text-fill-color: #fff;
+    opacity: 1 !important;
+}
+
+.category-carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    #screenshotShow canvas, #export-container canvas {
+        width: 95%;
+    }
+
+    #char-tier-outer-container-scroll {
+        position: relative;
+        height: auto;
+        background: #fff;
+        padding: 0;
+        margin: 0;
+        z-index: 1000;
+        border: none;
+    }
+
+    #overlay #modalWrapper #modal, #overlay #modal-wrapper #modal, #gameChange, #helpMenu, #screenshotShow, #export-container {
+        max-height: 800px;
+        overflow-y: scroll;
+    }
+
+    #char-tier-container-scroll {
+        position: relative;
+        width: 100%;
+        bottom: 15px !important;
+        height: auto;
+        overflow-x: scroll;
+        background: #fff;
+        padding: 20px 0 0;
+        margin: 0px;
+        z-index: 1000;
+        border: none
+    }
+
+    #char, #create-image-carousel {
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    button {
+        font-size: 16px
+    }
+
+    .category-carousel-item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .character {
+        display: inline-block;
+        height: 70px;
+        width: 70px;
+        background-size: cover;
+    }
+
+    #color-select, #backgroundcolorselect {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #tier-wrap {
+        max-width: 1000px !important;
+    }
+
+    .axis-labels {
+        font-size: 19px;
+        color: #fff;
+    }
+
+    .axis-text {
+        color: #fff;
+        font-size: 16px;
+        width: 250px;
+    }
+
+    #left-x .axis-text {
+        text-align: left;
+    }
+
+    #right-x .axis-text {
+        text-align: right;
+    }
+
+    #top-y .axis-text {
+        text-align: center;
+    }
+
+    #bottom-y .axis-text {
+        text-align: center;
+    }
+
+    .draggable-list .draggable {
+        width: 35px;
+        height: 35px;
+    }
+
+    .draggable {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    #char, #create-image-carousel {
+        /*width: 8500px;*/
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    #char-tier-outer-container-scroll {
+        width: 100%;
+        bottom: 0px !important;
+        height: 130px;
+        background: #fff;
+        padding: 5px 0;
+        margin: 0 -13px;
+        z-index: 1000;
+        border-top: #666 solid 1px;
+        border-bottom: #666 solid 1px;
+        box-sizing: border-box;
+    }
+
+    #char-tier-outer-container-scroll.sticky {
+        position: fixed;
+        bottom: -10px !important;
+    }
+
+    #char-tier-container-scroll {
+        overflow-x: scroll;
+        z-index: 10005
+    }
+
+    .settings-control {
+        width: 60px;
+        flex-direction: column;
+
+    }
+}
+
+.ac-lre-ad-bar {
+    z-index: 500;
+}
